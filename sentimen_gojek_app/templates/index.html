@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Prediksi Sentimen Ulasan Aplikasi Gojek</title>
+    <title> Klasifikasi Sentimen Ulasan Pengguna Aplikasi Gojek Menggunakan Metode CatBoost</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,15 +35,15 @@
     </style>
 </head>
 <body>
-    <h2>Prediksi Sentimen Ulasan Gojek</h2>
+    <h2>Klasifikasi Sentimen Ulasan Pengguna Aplikasi Gojek Menggunakan Metode CatBoost</h2>
     <form method="POST">
         <textarea name="ulasan" placeholder="Masukkan ulasan Anda di sini...">{{ ulasan }}</textarea><br>
-        <button class="btn" type="submit">Prediksi</button>
+        <button class="btn" type="submit">Beri Ulasan</button>
     </form>
 
     {% if hasil %}
     <div class="hasil">
-        <strong>Hasil Prediksi:</strong> {{ hasil }}
+        <strong>Hasil Klasifikasi:</strong> {{ hasil }}
     </div>
     {% endif %}
 </body>
